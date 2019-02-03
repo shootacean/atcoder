@@ -13,7 +13,7 @@ func main() {
     sc.Split(bufio.ScanWords)
     a := readInt()
     b := readInt()
-    s := GetEvenOdd(a*b)
+    s := GetEvenOdd(a * b)
     fmt.Printf("%s\n", s)
 }
 
