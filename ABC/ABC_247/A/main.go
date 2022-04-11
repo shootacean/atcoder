@@ -1,10 +1,11 @@
+// main is solve AtCoder ABC247 - A
 package main
 
 import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
+	// "strconv"
 	"strings"
 )
 
@@ -16,11 +17,10 @@ func main() {
 	var a []string
 	a = append(a, "0")
 	for i, _s := range strings.Split(s, "") {
-		if i == i - 1 {
+		if i == len(s) - 1 {
 			break;
 		}
 		a = append(a, _s)
-		fmt.Println(_s)
 	}
 	fmt.Println(strings.Join(a, ""))
 }
